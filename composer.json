@@ -1,0 +1,27 @@
+{
+    "name": "geeky/queryCacheBuilder",
+    "description": "This package is caching every single query per request, to make sure that you will never duplicate your query again.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel","database","cache","query cache","laravel duplicate query","query cache builder"],
+    "authors": [
+        {
+            "name": "Mohamed Emad",
+            "email": "thegeekym@gmail.com",
+            "role": "Back-End Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Geeky\\Database\\": "database/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Geeky\\Database\\CacheBuilderServiceProvider"
+            ]
+        }
+    }
+}

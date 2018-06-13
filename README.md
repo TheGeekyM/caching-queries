@@ -1,4 +1,4 @@
-# caching-queries
+# Query Cache Builder
 If you are using [Barryvdh's Debug Bar](https://github.com/barryvdh/laravel-debugbar) and you're seeing tons of duplicate queries, and you simply have no time to track them all down.
 
 ![Screenshot](https://image.ibb.co/due1hy/before.png)

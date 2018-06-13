@@ -11,7 +11,7 @@ If a query excutes, we will check if the query executed once before so we will r
      composer require geeky/query-cache-builder
 
 
-2- Set up a custom Cache Driver. We're doing this so that we don't mess with any existing Cache logic you might already be using. In `~/config/cache.php` add below cache stores array :
+2- Add a custom Cache Driver. We're doing this so that we don't mess with any existing Cache logic you might already be using. In `~/config/cache.php` add below cache stores array :
 
 ```
 Note: you can use what you want of cache drivers.
@@ -25,8 +25,11 @@ Note: you can use what you want of cache drivers.
 
 ```
 
+3- If you don't use auto-discovery, add the ServiceProvider to the providers array in config/app.php
 
-3- Copy the package config to your local config with the publish command:
+    Geeky\Database\CacheBuilderServiceProvider::class
+ 
+4- Copy the package config to your local config with the publish command:
      
     php artisan vendor:publish --provider="Geeky\Database\CacheBuilderServiceProvider"
 This will publish the `cachebuilder` config file that gives you the ability to enable cahcing queries and the time you want to cache them.

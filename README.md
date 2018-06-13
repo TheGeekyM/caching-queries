@@ -49,7 +49,7 @@ return [
 
 ## Usage
 
-**Use the `CacheQueryBuilder trait` in any model you want to use this feature.**
+Use the `CacheQueryBuilder trait` in any model you want to use this feature.
 
 ```
 <?php

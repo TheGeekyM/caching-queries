@@ -75,3 +75,7 @@ class SomeModel extends Model
     use CacheQueryBuilder;
 }
 ```
+
+Use the below command if you want to flush the cache of our custom store 
+
+    php artisan cache-builder:clear

@@ -4,7 +4,7 @@ If you are using [Barryvdh's Debug Bar](https://github.com/barryvdh/laravel-debu
 ![Screenshot](https://image.ibb.co/due1hy/before.png)
 
 
-The package is caching all duplicates queries and it makes sure that you never execute the same query again, by overriding the method `runSelect` exsists in `Illuminate\Database\Query\Builder` that runs in every select query in Laravel, and we're going to cache every query by it's SQL and it's Bindings.
+The package is caching all duplicates queries and it makes sure that you will never be executed the same query again, by overriding the method `runSelect` exsists in `Illuminate\Database\Query\Builder` that runs in every select query in Laravel, and we're going to cache every query by it's SQL and it's Bindings.
 
 So instead of excuting a query, we will cache it as a key and it's results as a value.
 

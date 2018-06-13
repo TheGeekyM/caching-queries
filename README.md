@@ -8,7 +8,7 @@ If a query excutes, we will check if the query executed once before so we will r
 ## Installation
 1- Install using composer:
     
-     composer require geeky/caching-queries
+     composer require geeky/query-cache-builder
 
 
 2- Set up a custom Cache Driver. We're doing this so that we don't mess with any existing Cache logic you might already be using. In `~/config/cache.php` add below cache stores array :

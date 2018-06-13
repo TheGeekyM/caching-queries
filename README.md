@@ -1,10 +1,10 @@
 # caching-queries
-if you are using [Barryvdh's Debug Bar](https://github.com/barryvdh/laravel-debugbar) and you're seeing tons of duplicate queries, and you simply don't have the time to track them all down.
+If you are using [Barryvdh's Debug Bar](https://github.com/barryvdh/laravel-debugbar) and you're seeing tons of duplicate queries, and you simply have no time to track them all down.
 
 ![Screenshot](https://image.ibb.co/due1hy/before.png)
 
 
-The package is caching duplicates queries and never execute the same query again, by overriding the method `runSelect` exsists in `Illuminate\Database\Query\Builder` that runs in every select query in Laravel, and we're going to cache every query by it's SQL and it's Bindings.
+The package is caching all duplicates queries and it makes sure that you never execute the same query again, by overriding the method `runSelect` exsists in `Illuminate\Database\Query\Builder` that runs in every select query in Laravel, and we're going to cache every query by it's SQL and it's Bindings.
 
 So instead of excuting a query, we will cache it as a key and it's results as a value.
 

@@ -1,5 +1,5 @@
 {
-    "name": "geeky/queryCacheBuilder",
+    "name": "geeky/query-cache-builder",
     "description": "This package is caching every single query per request, to make sure that you will never duplicate your query again.",
     "type": "library",
     "license": "MIT",
